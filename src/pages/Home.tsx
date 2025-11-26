@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Smartphone, Globe, Brain, Zap, Bot, CheckCircle, Code, Rocket, Shield } from "lucide-react";
+import Header from "@/components/Home/Header";
 
 export default function Home() {
   const services = [
@@ -70,30 +71,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="gradient-hero py-20 md:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="mb-6 bg-gradient-to-r from-primary via-primary-light to-primary-lighter bg-clip-text text-transparent">
-              We Build Mobile Apps, Websites and AI Solutions That Scale
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              CodeMuse is a global development agency helping brands build smarter digital products with cutting-edge technology.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button size="lg" className="gradient-primary text-primary-foreground hover:opacity-90 shadow-medium">
-                  Get a Quote <ArrowRight className="ml-2" size={20} />
-                </Button>
-              </Link>
-              <Link to="/portfolio">
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary">
-                  View Portfolio
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Header/>
 
       {/* Why Choose CodeMuse */}
       <section className="py-20 bg-background">
